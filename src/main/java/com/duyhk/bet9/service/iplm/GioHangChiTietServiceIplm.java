@@ -28,6 +28,7 @@ public class GioHangChiTietServiceIplm implements GioHangChiTietService {
         /*
             => nếu có rồi => update la số lượng trong giỏ hanng
             => nếu chưa có => thêm mới
+
          */
         GioHangChiTiet isExist =
                 gioHangChiTietRepo.findBySanPhamChiTietIdAndGioHangId(sanPhamChiTiet.getId(), dto.getGioHangId())

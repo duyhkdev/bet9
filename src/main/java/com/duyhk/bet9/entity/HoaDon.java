@@ -2,9 +2,12 @@ package com.duyhk.bet9.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -21,8 +24,8 @@ public class HoaDon {
     String diaChi;
     String hoVaTen;
     String maNhanVien;
-    String ngayTao;
-    String ngayHoanThanh;
+    LocalDate ngayTao;
+    LocalDate ngayHoanThanh;
     String lyDoHuy;
     Integer trangThai; // 1 đang cho, 2 cho lay hang, 3 dang giao hang, 4 da hoan thanh, 0 la huy
     Integer loaiHoaDon; // 1 online, 2 tại quầy
